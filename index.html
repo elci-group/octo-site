@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>octo-site — hosted on GitHub, served by grow</title>
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="wordmark" href="/">octo<span>/site</span></a>
+    <nav>
+      <a href="/about.html">about</a>
+      <a href="http://127.0.0.1:7870/">portal</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <p class="kicker">hosted on github &middot; served locally</p>
+  <h1>This page travelled far to be local.</h1>
+  <p class="dek">Its repository lives on GitHub. You reached it by typing
+    <code>grow://github.com/elci-group/octo-site</code> — the grow daemon
+    cloned the repo, verified the commit, and served it from your machine.</p>
+
+  <article>
+    <h2>What just happened</h2>
+    <p>No deploy ran to produce this page. The Chrome extension asked the
+      local grow daemon to resolve a <code>grow://</code> URL; the daemon
+      cloned <code>elci-group/octo-site</code> over https, recorded the
+      verified HEAD commit in the local registry, and started serving the
+      commit tree on a localhost port.</p>
+    <p>If the repository moves on, grow refuses to run the drifted state
+      until it is re-installed and re-verified — the same discipline as every
+      other grow app.</p>
+    <p>Read more <a href="/about.html">about this site</a>, or jump straight
+      to it the grow way:
+      <a href="grow://github.com/elci-group/octo-site/about.html">grow://github.com/elci-group/octo-site/about.html</a>.</p>
+  </article>
+</main>
+
+<footer>
+  <div class="wrap">
+    Served from a verified git HEAD tree by grow. Source:
+    <code>github.com/elci-group/octo-site</code>.
+  </div>
+</footer>
+</body>
+</html>

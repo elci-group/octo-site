@@ -1,0 +1,11 @@
+[grow]
+name = "octo-site"
+version = "1.0.0"
+
+[network]
+enabled = false
+
+[permissions]
+filesystem = "restricted"
+camera = false
+microphone = false
